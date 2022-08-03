@@ -79,7 +79,6 @@ def gear():
         else:
             re_price = re.compile(r'''(current)*\s(Price|SKU).{0,20}\$\s*
                                       (\d{1,3}(?:[.,]\d{3})*(?:[.,]\d{2}))
-                                      .*?
                                       ''', flags=re.I|re.X)
             m = re_price.search(filtered_out)
             if m:
